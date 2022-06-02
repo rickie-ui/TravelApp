@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primaryColor: #f0f1f6;
+  --secondaryColor: #79a7a7;
+  --color-1: #4a69aa;
+  --color-2: #19b4ef;
+  --color-3: #ffffff;
+  --color-4: #a3a7b4;
+  --color-5: rgba(0, 0, 0, 0.4);
+  --color-6: #444e65;
+  --mainFont: 'Poppins', sans-serif;
+}
+img {
+  width: 100%;
+}
+/* place */
+.place,
+.place-desc {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  background-image: url('../images/place.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--color-3);
+  font-family: var(--mainFont);
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px 0 20px;
+  font-size: 20px;
+  opacity: 0.8;
+  position: sticky;
+  top: 0;
+}
+.place-details {
+  width: 96%;
+  border-radius: 5px;
+  height: auto;
+  position: absolute;
+  left: 2%;
+  bottom: 25px;
+}
+.details-content {
+  width: 100%;
+  height: auto;
+  padding: 12px;
+  background-color: var(--color-5);
+  border-radius: 5px;
+}
+.details-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.like-btn {
+  padding: 12px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-3);
+  color: var(--color-6);
+  font-size: 18px;
+}
+.distance,
+.more-details {
+  font-size: 12px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+.more-details {
+  text-align: center;
+}
+.title {
+  background-color: var(--color-3);
+  width: 100px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--color-6);
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 600px) {
+  body {
+    display: none;
+  }
+}
